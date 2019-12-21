@@ -9,5 +9,5 @@ The README For the GODOT OpenVR GDNative module is as follows:
 
 * [README](addons/godot-openvr/README.md)
 * [CHANGES](addons/godot-openvr/CHANGES.md)
-* [LICENCE](addons/godot-openvr/LICENCE)
-* [Valve LICENCE](addons/godot-openvr/bin/LICENCE)
+* [LICENSE](addons/godot-openvr/LICENSE)
+* [Valve LICENSE](addons/godot-openvr/bin/LICENSE)
