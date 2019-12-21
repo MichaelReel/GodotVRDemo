@@ -1,3 +1,9 @@
+# Most basic OpenVR demo in Godot 3.1
+
+Just the very basic setup, with nothing added yet.
+
+The README For the GODOT OpenVR GDNative module is as follows:
+
 # Godot OpenVR GDNative module
 This module is provided as is, all files are contained within the addons/godot-openvr-asset folder
 
