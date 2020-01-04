@@ -120,7 +120,7 @@ func _physics_process(delta):
 		############################################################
 		# New teleport logic
 		# We're going to use test move in steps to find out where we hit something...
-		# This can be optimised loads by determining the lenght based on the angle between sections extending the length when we're in a flat part of the arch
+		# This can be optimised loads by determining the length based on the angle between sections extending the length when we're in a flat part of the arch
 		# Where we do get a collission we may want to fine tune the collision
 		var cast_length = 0.0
 		var fine_tune = 1.0
