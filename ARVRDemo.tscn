@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://ARVRDemo.gd" type="Script" id=1]
 [ext_resource path="res://addons/godot-openvr/scenes/ovr_controller.tscn" type="PackedScene" id=2]
 [ext_resource path="res://addons/vr-common/functions/Function_Teleport.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Debug.gd" type="Script" id=4]
+[ext_resource path="res://addons/vr-common/functions/Function_Pickup.tscn" type="PackedScene" id=5]
 
 [node name="ARVROrigin" type="ARVROrigin"]
 script = ExtResource( 1 )
@@ -20,10 +21,17 @@ origin = NodePath("../..")
 [node name="Debug" type="Spatial" parent="OVRController"]
 script = ExtResource( 4 )
 
+[node name="Function_Pickup" parent="OVRController" instance=ExtResource( 5 )]
+
 [node name="OVRController2" parent="." instance=ExtResource( 2 )]
 controller_id = 2
 
 [node name="MeshInstance" type="MeshInstance" parent="OVRController2"]
 
-[node name="Debug2" type="Spatial" parent="OVRController2"]
+[node name="Function_Teleport" parent="OVRController2" instance=ExtResource( 3 )]
+origin = NodePath("../..")
+
+[node name="Debug" type="Spatial" parent="OVRController2"]
 script = ExtResource( 4 )
+
+[node name="Function_Pickup" parent="OVRController2" instance=ExtResource( 5 )]
